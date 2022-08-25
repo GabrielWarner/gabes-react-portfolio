@@ -5,6 +5,9 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
+import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
+import '../index.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -26,11 +29,15 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <div className="main">
+    <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+    <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+
+    </Container>
       
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
+      <Footer/>
     </div>
   );
 }
