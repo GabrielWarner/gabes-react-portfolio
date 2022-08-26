@@ -5,8 +5,6 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
 import '../index.css';
 import '../styles/PortfolioContainer.css';
 
@@ -31,7 +29,7 @@ export default function PortfolioContainer() {
 
   return (
     <div className="main">
-
+      <h1>hi</h1>
     <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
   

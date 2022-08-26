@@ -8,18 +8,18 @@ function Header({ currentPage, handlePageChange }) {
     <div>
 
     
-    <Navbar className='justify-content-center p-2'  activeKey="#about" bg="dark" variant="dark">
+    <Navbar className='justify-content-center p-2' bg="dark" variant="dark">
         
-          <Navbar.Brand href="#about">
+          <Navbar.Brand>
             Gabriel Warner
           </Navbar.Brand>
 
 
           <Nav>
-          <Nav.Link href="#about" onClick={() => handlePageChange('About')}  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}><a href='#about'></a>About</Nav.Link>
-          <Nav.Link className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Projects')} eventKey="#projects"><a href='#Projects'></a>Projects</Nav.Link>
-          <Nav.Link className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Contact')} eventKey="#contact"><a href='#Contact'></a>Contact</Nav.Link>
-          <Nav.Link className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link' } onClick={() => handlePageChange('Resume')} eventKey="#resume"><a href='#Resume'></a>Resume</Nav.Link>
+          <Nav.Link onClick={() => handlePageChange('About')}  className={currentPage === 'About' ? 'nav-link active p-5' : 'nav-link p-5'}><a href='#about'></a>About</Nav.Link>
+          <Nav.Link className={currentPage === 'Projects' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Projects')} eventKey="#projects"><a href='#Projects'></a>Projects</Nav.Link>
+          <Nav.Link className={currentPage === 'Contact' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Contact')} eventKey="#contact"><a href='#Contact'></a>Contact</Nav.Link>
+          <Nav.Link className={currentPage === 'Resume' ? 'nav-link active p-5' : 'nav-link p-5' } onClick={() => handlePageChange('Resume')} eventKey="#resume"><a href='#Resume'></a>Resume</Nav.Link>
 
           </Nav>
 

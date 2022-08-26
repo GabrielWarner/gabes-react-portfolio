@@ -1,5 +1,5 @@
-import { Grid, Typography } from '@mui/material';
-import { Box, Container } from '@mui/system';
+import { Typography } from '@mui/material';
+import { Container } from '@mui/system';
 import React from 'react'
 import '../../styles/About.css';
 
