@@ -11,7 +11,6 @@ import '../styles/PortfolioContainer.css';
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
 
-  // TODO: Add a comment describing the functionality of this method
   const renderPage = () => {
     if (currentPage === 'About') {
       return <About />;
@@ -29,14 +28,9 @@ export default function PortfolioContainer() {
 
   return (
     <div className="main">
-      <h1>hi</h1>
     <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-
-  
-      
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
-      {renderPage()}
-      <Footer/>
+    {renderPage()}
+    <Footer/>
     </div>
   );
 }
