@@ -8,6 +8,7 @@ import Resume from './pages/Resume';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import '../index.css';
+import '../styles/PortfolioContainer.css';
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('About');
@@ -30,10 +31,10 @@ export default function PortfolioContainer() {
 
   return (
     <div className="main">
-    <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+
     <Header currentPage={currentPage} handlePageChange={handlePageChange} />
 
-    </Container>
+  
       
       {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}

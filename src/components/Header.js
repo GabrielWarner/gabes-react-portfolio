@@ -1,55 +1,33 @@
 import React from 'react';
-
-// TODO: Add a comment explaining how we are able to extract the key value pairs from props
+import '../styles/Header.css';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
-        <a
-          href="#home"
-          onClick={() => handlePageChange('About')}
-          //*  TODO: BONUS: Add a comment explaining what kind of operator this is and what it is checking for
+    <div>
 
-          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
-        >
-          About
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#about"
-          onClick={() => handlePageChange('Projects')}
-          //  TODO: Add a comment explaining what this logic is doing
+    
+    <Navbar className='justify-content-center p-2'  activeKey="#about" bg="dark" variant="dark">
+        
+          <Navbar.Brand href="#about">
+            Gabriel Warner
+          </Navbar.Brand>
 
-          className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}
-        >
-          Projects
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#blog"
-          onClick={() => handlePageChange('Contact')}
-          //  TODO: Add a comment explaining what this logic is doing
 
-          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
-        >
-          Contact
-        </a>
-      </li>
-      <li className="nav-item">
-        <a
-          href="#contact"
-          //  TODO: Add a comment explaining what this logic is doing
+          <Nav>
+          <Nav.Link href="#about" onClick={() => handlePageChange('About')}  className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}><a href='#about'></a>About</Nav.Link>
+          <Nav.Link className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Projects')} eventKey="#projects"><a href='#Projects'></a>Projects</Nav.Link>
+          <Nav.Link className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'} onClick={() => handlePageChange('Contact')} eventKey="#contact"><a href='#Contact'></a>Contact</Nav.Link>
+          <Nav.Link className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link' } onClick={() => handlePageChange('Resume')} eventKey="#resume"><a href='#Resume'></a>Resume</Nav.Link>
 
-          onClick={() => handlePageChange('Resume')}
-          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
-        >
-          Resume
-        </a>
-      </li>
-    </ul>
+          </Nav>
+
+
+      </Navbar>
+
+
+    </div>
   );
 }
 

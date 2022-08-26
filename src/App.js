@@ -3,6 +3,7 @@ import './App.css';
 import PortfolioContainer from './components/PortfolioContainer';
 import React, { Component }  from 'react';
 import { CssBaseline } from '@mui/material';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
