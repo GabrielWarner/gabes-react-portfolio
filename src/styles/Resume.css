@@ -2,3 +2,42 @@
     display: flex;
     justify-content: center;
 }
+
+.icon1 {
+    animation: bounce 1s;
+}
+.icon2 {
+    animation: bounce 1.3s;
+}
+.icon3 {
+    animation: bounce 1.5s;
+}
+.icon4 {
+    animation: bounce 1.7s;
+}
+.icon5 {
+    animation: bounce 1.9s;
+}
+.icon6 {
+    animation: bounce 2.1s;
+}
+.icon7 {
+    animation: bounce 2.3s;
+}
+.icon8 {
+    animation: bounce 2.6s;
+}
+
+
+
+@keyframes bounce {
+    0%{
+        transform: scale(90%);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+    
+}

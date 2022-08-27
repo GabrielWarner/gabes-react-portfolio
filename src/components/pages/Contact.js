@@ -15,9 +15,10 @@ export default function Contact() {
     const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
-
+    
     // Based on the input type, we set the state of either email, name or message
     if (inputType === 'email') {
+      
       setEmail(inputValue);
     } else if (inputType === 'name') {
       setName(inputValue);
@@ -53,6 +54,11 @@ export default function Contact() {
         value={email}
         name="email"
         onChange={handleInputChange}
+        onBlur={(e)=>{
+          if(!e.target.value){
+            setErrorMessage(`text is required`)
+          }
+        }}
         type="email"
        
       />
@@ -62,6 +68,11 @@ export default function Contact() {
         name="name"
         onChange={handleInputChange}
         type="text"
+        onBlur={(e)=>{
+          if(!e.target.value){
+            setErrorMessage(`text is required`)
+          }
+        }}
         
       />
       <Form.Label>Message</Form.Label>
@@ -70,6 +81,11 @@ export default function Contact() {
         name="message"
         onChange={handleInputChange}
         as="textarea"
+        onBlur={(e)=>{
+          if(!e.target.value){
+            setErrorMessage(`text is required`)
+          }
+        }}
        
       />
     {errorMessage && (
