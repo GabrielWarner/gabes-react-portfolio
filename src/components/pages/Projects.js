@@ -6,38 +6,72 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 export default function Projects() {
   return (
-    <div>
-      <Container>
-        <h1>My Projects</h1>
-      <Row>
-        <Col>
-        <ProjectCard 
+    <div className='container '>
+      <h1>My Projects</h1>
+<div class="row">
+    <div class="col center-block aligncard1">
+        <ProjectCard
+        className='center' 
         img='/images/vivachat.jpg' 
         name='Viva Chat' 
         description='A peer to peer video chat app using Socket IO and PeerJS'
         repo='https://github.com/brownj47/random-video-chat'
         deployed='https://vivachat.herokuapp.com/'></ProjectCard>
-        </Col>
-        <Col>
-        <ProjectCard></ProjectCard>
-        </Col>
-      </Row>
+    </div>
+    <div class="col center-block aligncard1">
+    <ProjectCard
+        className='center' 
+        img='/images/vivachat.jpg' 
+        name='Viva Chat' 
+        description='A peer to peer video chat app using Socket IO and PeerJS'
+        repo='https://github.com/brownj47/random-video-chat'
+        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+    </div>
+</div>
+<div class="row">
+    <div class="col center-block aligncard1">
+        <ProjectCard
+        className='center' 
+        img='/images/vivachat.jpg' 
+        name='Viva Chat' 
+        description='A peer to peer video chat app using Socket IO and PeerJS'
+        repo='https://github.com/brownj47/random-video-chat'
+        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+    </div>
+    <div class="col center-block aligncard1">
+    <ProjectCard
+        className='center' 
+        img='/images/vivachat.jpg' 
+        name='Viva Chat' 
+        description='A peer to peer video chat app using Socket IO and PeerJS'
+        repo='https://github.com/brownj47/random-video-chat'
+        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+    </div>
+</div>
+<div class="row">
+    <div class="col center-block aligncard1">
+        <ProjectCard
+        className='center' 
+        img='/images/vivachat.jpg' 
+        name='Viva Chat' 
+        description='A peer to peer video chat app using Socket IO and PeerJS'
+        repo='https://github.com/brownj47/random-video-chat'
+        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+    </div>
+    <div class="col center-block aligncard1">
+    <ProjectCard
+        className='center' 
+        img='/images/vivachat.jpg' 
+        name='Viva Chat' 
+        description='A peer to peer video chat app using Socket IO and PeerJS'
+        repo='https://github.com/brownj47/random-video-chat'
+        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+    </div>
+</div>
+      
 
-      <Row>
-        <Col>
-        <ProjectCard></ProjectCard>
-        </Col>
-        <Col>
-        <ProjectCard></ProjectCard>
-        </Col>
-      </Row>
 
-      <Row>
-        <Col><ProjectCard></ProjectCard></Col>
-        <Col><ProjectCard></ProjectCard></Col>
-      </Row>
-
-      </Container>
+      
     </div>
   )
 }

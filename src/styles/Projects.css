@@ -1,0 +1,22 @@
+.aligncard1 {
+display: flex;
+justify-content: center;
+padding: 1rem;
+animation: bounce 1s;
+color: red;
+}
+
+
+
+
+@keyframes bounce {
+    0%{
+        transform: scale(90%);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+    
+}
