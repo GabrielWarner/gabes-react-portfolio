@@ -7,7 +7,7 @@ export default function SkillIcon(props) {
     <Avatar
   alt={props.name}
   src={props.img}
-  sx={{ width: 56, height: 56 }}
+  sx={{ width: 200, height: 200 }}
 />
   )
 }

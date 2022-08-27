@@ -6,15 +6,16 @@ export default function Resume() {
     <div>
       <h1>Download my <a href="/GabrielWarnerRESUME.pdf" download>resume</a></h1>
       <h3>My Skills</h3>
+      <div className='skills'>
       <SkillIcon
       name='html'
-      img='/images/html.png'/>
+      img='/images/html.jpg'/>
             <SkillIcon
       name='CSS'
       img='/images/css.png'/>
             <SkillIcon
       name='Javascript'
-      img='/images/js.png'/>
+      img='/images/js.svg'/>
             <SkillIcon
       name='NodeJS'
       img='/images/node.png'/>
@@ -30,6 +31,7 @@ export default function Resume() {
                   <SkillIcon
       name='Git'
       img='/images/git.png'/>
+      </div>
     </div>
   )
 }
