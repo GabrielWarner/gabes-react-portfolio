@@ -52,20 +52,20 @@ export default function Projects() {
     <div class="col center-block aligncard1">
         <ProjectCard
         className='center' 
-        img='/images/vivachat.jpg' 
-        name='Viva Chat' 
-        description='A peer to peer video chat app using Socket IO and PeerJS'
-        repo='https://github.com/brownj47/random-video-chat'
-        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+        img='/images/employeetracker.jpg' 
+        name='Employee Tracker' 
+        description='An API to manage a company and its employees.'
+        repo='https://github.com/GabrielWarner/employee-tracker'
+        deployed='https://github.com/GabrielWarner/employee-tracker'></ProjectCard>
     </div>
     <div class="col center-block aligncard1">
     <ProjectCard
         className='center' 
-        img='/images/vivachat.jpg' 
-        name='Viva Chat' 
-        description='A peer to peer video chat app using Socket IO and PeerJS'
-        repo='https://github.com/brownj47/random-video-chat'
-        deployed='https://vivachat.herokuapp.com/'></ProjectCard>
+        img='/images/weather.jpg' 
+        name='Weather' 
+        description='A weather app that lets users check the weather in any location'
+        repo='https://github.com/GabrielWarner/module-challenge-6'
+        deployed='https://gabrielwarner.github.io/module-challenge-6/'></ProjectCard>
     </div>
 </div>
       
