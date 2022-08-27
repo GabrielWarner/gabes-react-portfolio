@@ -16,10 +16,10 @@ function Header({ currentPage, handlePageChange }) {
 
 
           <Nav>
-          <Nav.Link onClick={() => handlePageChange('About')}  className={currentPage === 'About' ? 'nav-link active p-5' : 'nav-link p-5'}>About</Nav.Link>
-          <Nav.Link className={currentPage === 'Projects' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Projects')} eventKey="#projects">Projects</Nav.Link>
-          <Nav.Link className={currentPage === 'Contact' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Contact')} eventKey="#contact">Contact</Nav.Link>
-          <Nav.Link className={currentPage === 'Resume' ? 'nav-link active p-5' : 'nav-link p-5' } onClick={() => handlePageChange('Resume')} eventKey="#resume">Resume</Nav.Link>
+          <Nav.Link className={currentPage === 'About' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('About')}>About</Nav.Link>
+          <Nav.Link className={currentPage === 'Projects' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Projects')} >Projects</Nav.Link>
+          <Nav.Link className={currentPage === 'Contact' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Contact')} >Contact</Nav.Link>
+          <Nav.Link className={currentPage === 'Resume' ? 'nav-link active p-5' : 'nav-link p-5' } onClick={() => handlePageChange('Resume')} >Resume</Nav.Link>
 
           </Nav>
 

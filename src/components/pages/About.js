@@ -8,6 +8,7 @@ export default function About() {
   return (
     <div className='about'>
       <Container>
+        <h1>About Me</h1>
         <Avatar
         alt="Remy Sharp"
         src="/images/myface.png"

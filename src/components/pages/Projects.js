@@ -8,6 +8,7 @@ export default function Projects() {
   return (
     <div>
       <Container>
+        <h1>My Projects</h1>
       <Row>
         <Col>
         <ProjectCard 

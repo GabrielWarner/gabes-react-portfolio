@@ -19,7 +19,7 @@ function Copyright() {
 export default function Footer() {
   return (
 
-      <div className='footer' maxWidth="sm">
+      <div className='footer' maxidth="sm">
         <Typography variant="body1">
           Gabriel Warner
         </Typography>

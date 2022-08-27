@@ -1,7 +1,84 @@
 import React from 'react'
 import '../../styles/Contact.css';
+import { useState } from 'react';
+import {  validateEmail } from '../../utils/helpers';
+import Form from 'react-bootstrap/Form';
+
 export default function Contact() {
+  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, name or message
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+
+  };
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+
+    // First we check to see if the email is not valid or if the userName is empty. If so we set an error message to be displayed on the page.
+    if (!validateEmail(email)) {
+      setErrorMessage(`email must include '@' and/or '.com'`);
+      // We want to exit out of this code block if something is wrong so that the user can correct it
+      return;
+      // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
+    }
+    alert(`Thank you for your submission! I will get back to you within 24 hours. Thank you!`);
+
+    // If everything goes according to plan, we want to clear out the input after a successful registration.
+    setName('');
+    setMessage('');
+    setEmail('');
+  };
   return (
-    <div>Contact me</div>
+    <div>
+    <Form className="form">
+      <h1>Contact Me</h1>
+    <Form.Label>Email address</Form.Label>
+      <Form.Control
+        value={email}
+        name="email"
+        onChange={handleInputChange}
+        type="email"
+       
+      />
+      <Form.Label>Name</Form.Label>
+      <Form.Control
+        value={name}
+        name="name"
+        onChange={handleInputChange}
+        type="text"
+        
+      />
+      <Form.Label>Message</Form.Label>
+      <Form.Control
+        value={message}
+        name="message"
+        onChange={handleInputChange}
+        as="textarea"
+       
+      />
+    {errorMessage && (
+      <div>
+        <p className="error-text">{errorMessage}</p>
+      </div>
+    )}
+      <button type="button" onClick={handleFormSubmit}>Submit</button>
+    </Form>
+  </div>
   )
 }
