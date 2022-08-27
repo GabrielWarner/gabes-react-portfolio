@@ -4,9 +4,32 @@ import SkillIcon from '../SkillIcon';
 export default function Resume() {
   return (
     <div>
-      <h2>Download my <a href="/GabrielWarnerRESUME.pdf" download>resume</a></h2>
+      <h1>Download my <a href="/GabrielWarnerRESUME.pdf" download>resume</a></h1>
+      <h3>My Skills</h3>
       <SkillIcon
-      name=''/>
+      name='html'
+      img='/images/html.png'/>
+            <SkillIcon
+      name='CSS'
+      img='/images/css.png'/>
+            <SkillIcon
+      name='Javascript'
+      img='/images/js.png'/>
+            <SkillIcon
+      name='NodeJS'
+      img='/images/node.png'/>
+            <SkillIcon
+      name='MongoDB'
+      img='/images/mongo.png'/>
+            <SkillIcon
+      name='MySQL'
+      img='/images/mysql.png'/>
+            <SkillIcon
+      name='React'
+      img='/images/react.png'/>
+                  <SkillIcon
+      name='Git'
+      img='/images/git.png'/>
     </div>
   )
 }
