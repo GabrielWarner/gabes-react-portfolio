@@ -3,6 +3,7 @@ import '../../styles/Contact.css';
 import { useState } from 'react';
 import {  validateEmail } from '../../utils/helpers';
 import Form from 'react-bootstrap/Form';
+import Button from '@mui/material/Button';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
@@ -46,10 +47,10 @@ export default function Contact() {
     setEmail('');
   };
   return (
-    <div>
+    <div className='contact'>
     <Form className="form">
       <h1>Contact Me</h1>
-    <Form.Label>Email address</Form.Label>
+    <Form.Label>Email</Form.Label>
       <Form.Control
         value={email}
         name="email"
@@ -93,7 +94,7 @@ export default function Contact() {
         <p className="error-text">{errorMessage}</p>
       </div>
     )}
-      <button type="button" onClick={handleFormSubmit}>Submit</button>
+      <button className='button-19' type="button" onClick={handleFormSubmit}>Submit</button>
     </Form>
   </div>
   )

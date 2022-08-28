@@ -1,8 +1,34 @@
+@font-face {
+    font-family: 'yapari_variable_trialultra';
+    src: url('yapari-variable-trial-vf-webfont.woff2') format('woff2'),
+         url('yapari-variable-trial-vf-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.skills {
+    display: flex;
+    word-wrap: wrap;
+}
+
 .navbar{
     justify-content: center;
     padding: 1rem;
 }
+.navbarFix {
+    
+}
+
 
 a{
     color: white;
+}
+
+.header{
+    font-family: 'yapari_variable_trialultra';
+    
+}
+
+.navContainer {
+    flex-direction: column;
 }

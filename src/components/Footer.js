@@ -3,19 +3,9 @@ import * as React from 'react';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import '../styles/Footer.css';
+import { GoMarkGithub } from "react-icons/go";
+import { AiFillLinkedin } from "react-icons/ai";
 
-function Copyright() {
-  return (
-    <Typography variant="body2" color="text.secondary">
-      {'Copyright © '}
-      <Link color="inherit" href="https://mui.com/">
-        Your Website
-      </Link>{' '}
-      {new Date().getFullYear()}
-      {'.'}
-    </Typography>
-  );
-}
 export default function Footer() {
   return (
 
@@ -23,7 +13,14 @@ export default function Footer() {
         <Typography variant="body1">
           Gabriel Warner
         </Typography>
-        <Copyright />
+
+        <a className='footer-link' target='_blank' href='https://github.com/GabrielWarner'>
+        <GoMarkGithub size="2em"/>
+        </a>
+
+        <a className='footer-link' target='_blank' href='https://www.linkedin.com/in/gabriel-warner-083ab4211/'>
+        <AiFillLinkedin size="2em"/>
+        </a>
       </div>
     
     

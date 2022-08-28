@@ -1,12 +1,11 @@
 import React from 'react'
 import '../../styles/Projects.css';
 import ProjectCard from '../ProjectCard';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+
 export default function Projects() {
   return (
-    <div className='container '>
+    <div className='project-container' >
+<div className='container'>
       <h1>My Projects</h1>
 <div class="row">
     <div class="col center-block aligncard1">
@@ -26,6 +25,15 @@ export default function Projects() {
         description='A Dog or Cat breed finder with a mini game "Cute or Not" where you decide which puppy is cutest!'
         repo='https://github.com/GabrielWarner/cute-and-cuddly'
         deployed='https://gabrielwarner.github.io/cute-and-cuddly/'></ProjectCard>
+    </div>
+    <div class="col center-block aligncard1">
+    <ProjectCard
+        className='center' 
+        img='/images/weather.jpg' 
+        name='Weather' 
+        description='A weather app that lets users check the weather in any location'
+        repo='https://github.com/GabrielWarner/module-challenge-6'
+        deployed='https://gabrielwarner.github.io/module-challenge-6/'></ProjectCard>
     </div>
 </div>
 <div class="row">
@@ -47,8 +55,6 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/ecommerce-backend-api'
         deployed='https://github.com/GabrielWarner/ecommerce-backend-api'></ProjectCard>
     </div>
-</div>
-<div class="row">
     <div class="col center-block aligncard1">
         <ProjectCard
         className='center' 
@@ -58,20 +64,10 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/employee-tracker'
         deployed='https://github.com/GabrielWarner/employee-tracker'></ProjectCard>
     </div>
-    <div class="col center-block aligncard1">
-    <ProjectCard
-        className='center' 
-        img='/images/weather.jpg' 
-        name='Weather' 
-        description='A weather app that lets users check the weather in any location'
-        repo='https://github.com/GabrielWarner/module-challenge-6'
-        deployed='https://gabrielwarner.github.io/module-challenge-6/'></ProjectCard>
-    </div>
 </div>
       
+</div>
 
-
-      
     </div>
   )
 }

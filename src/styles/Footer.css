@@ -1,3 +1,12 @@
 .footer {
     margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    align-items: center;
+    gap: 2em;
+
+}
+.footer-link{
+    color: black;
 }
