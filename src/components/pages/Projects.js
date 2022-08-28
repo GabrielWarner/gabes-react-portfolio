@@ -6,11 +6,11 @@ export default function Projects() {
   return (
     <div className='project-container' >
 <div className='container'>
-      <h1>My Projects</h1>
+      <h1>My Project</h1>
 <div class="row">
     <div class="col center-block aligncard1">
         <ProjectCard
-        className='center' 
+        className='center'  add
         img='/images/vivachat.jpg' 
         name='Viva Chat' 
         description='A peer to peer video chat app using Socket IO and PeerJS'
