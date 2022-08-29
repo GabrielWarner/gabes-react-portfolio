@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className='project-container' >
 <div className='container'>
-      <h1 style={{textAlign:"center"}}>My Projects</h1>
+      <h1 className='animate__animated animate__bounce' style={{textAlign:"center"}}>My Projects</h1>
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1 card1">
         <ProjectCard
