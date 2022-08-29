@@ -1,6 +1,19 @@
+.resume-container{
+    margin: auto;
+    padding: auto;
+    text-align: center;
+}
+
+.resume-link {
+color: black;
+text-decoration: underline;
+}
+
+
 .skills {
     display: flex;
     justify-content: center;
+    word-wrap: wrap;
 }
 
 .icon1 {

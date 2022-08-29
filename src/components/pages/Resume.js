@@ -3,8 +3,7 @@ import '../../styles/Resume.css';
 import SkillIcon from '../SkillIcon';
 export default function Resume() {
   return (
-    <div>
-      <h1>Download my <a href="/GabrielWarnerRESUME.pdf" download>resume</a></h1>
+    <div className='resume-container'>
       <h3>My Skills</h3>
       <div className='skills'>
 
@@ -56,6 +55,7 @@ export default function Resume() {
       img='/images/git.png'/>
       </div>
       </div>
+      <h2>Download my resume <a className='resume-link' href="/GabrielWarnerRESUME.pdf" download>here</a></h2>
     </div>
   )
 }

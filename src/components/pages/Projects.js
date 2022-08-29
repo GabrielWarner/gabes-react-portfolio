@@ -8,7 +8,7 @@ export default function Projects() {
 <div className='container'>
       <h1>My Project</h1>
 <div class="row">
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
         <ProjectCard
         className='center'  add
         img='/images/vivachat.jpg' 
@@ -17,7 +17,7 @@ export default function Projects() {
         repo='https://github.com/brownj47/random-video-chat'
         deployed='https://vivachat.herokuapp.com/'></ProjectCard>
     </div>
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
     <ProjectCard
         className='center' 
         img='/images/breedfinder.jpg' 
@@ -26,7 +26,7 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/cute-and-cuddly'
         deployed='https://gabrielwarner.github.io/cute-and-cuddly/'></ProjectCard>
     </div>
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
     <ProjectCard
         className='center' 
         img='/images/weather.jpg' 
@@ -35,9 +35,7 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/module-challenge-6'
         deployed='https://gabrielwarner.github.io/module-challenge-6/'></ProjectCard>
     </div>
-</div>
-<div class="row">
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
         <ProjectCard
         className='center' 
         img='/images/socialnetwork.jpg' 
@@ -46,7 +44,7 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/social-network-api'
         deployed='https://github.com/GabrielWarner/social-network-api'></ProjectCard>
     </div>
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
     <ProjectCard
         className='center' 
         img='/images/eccomerce.jpg' 
@@ -55,7 +53,7 @@ export default function Projects() {
         repo='https://github.com/GabrielWarner/ecommerce-backend-api'
         deployed='https://github.com/GabrielWarner/ecommerce-backend-api'></ProjectCard>
     </div>
-    <div class="col center-block aligncard1">
+    <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1">
         <ProjectCard
         className='center' 
         img='/images/employeetracker.jpg' 
