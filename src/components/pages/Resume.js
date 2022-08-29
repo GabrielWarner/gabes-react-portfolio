@@ -5,54 +5,64 @@ export default function Resume() {
   return (
     <div className='resume-container'>
       <h3>My Skills</h3>
-      <div className='skills'>
 
-      <div className='icon1'>
+      <div className='container'>
+      <div className='row'>
+
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon1 col-xs-6 col-md-3'>
+            HTML
       <SkillIcon
       className='icon1'
       name='html'
       img='/images/html.jpg'/>
       </div>
-      <div className='icon2'>
+
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon2 col-xs-6 col-md-3'>
+            CSS
             <SkillIcon
       name='CSS'
       img='/images/css.png'/>
       </div>
 
-      <div className='icon3'>
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon3 col-xs-6 col-md-3'>
+            Javascript
             <SkillIcon
       name='Javascript'
       img='/images/js.svg'/>
       </div>
-      <div className='icon4'>
-
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon4 col-xs-6 col-md-3'>
+            Node
             <SkillIcon
       name='NodeJS'
       img='/images/node.png'/>
       </div>
-      <div className='icon5'>
-            
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon5 col-xs-6 col-md-3'>
+            MongoDB
             <SkillIcon
       name='MongoDB'
       img='/images/mongo.png'/>
             </div>
 
-      <div className='icon6'>
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon6 col-xs-6 col-md-3'>
+            MySQL
             <SkillIcon
       name='MySQL'
       img='/images/mysql.png'/>
       </div>
 
-      <div className='icon7'>
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon7 col-xs-6 col-md-3'>
+            React
             <SkillIcon
       name='React'
       img='/images/react.png'/>
       </div>
 
-      <div className='icon8'>
+      <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}} className='icon8 col-xs-6 col-md-3'>
+            Git
                   <SkillIcon
       name='Git'
       img='/images/git.png'/>
+      </div>
       </div>
       </div>
       <h2>Download my resume <a className='resume-link' href="/GabrielWarnerRESUME.pdf" download>here</a></h2>

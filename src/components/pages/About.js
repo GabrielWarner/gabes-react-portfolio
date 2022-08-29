@@ -14,7 +14,7 @@ export default function About() {
         sx={{ width: 200, height: 200 }}
         />
         <h1>Hi, Im Gabriel<br></br> A Software Engineer</h1>
-        <Typography>
+        <Typography className='about-text'>
           Hello, My name is Gabriel warner and I am a student at the University of Washinton Tacoma, Im a Senior whose about to graduate with a Bachelors of Science in Information Technology.
         </Typography>
         

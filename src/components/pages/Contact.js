@@ -49,7 +49,7 @@ export default function Contact() {
   return (
     <div className='contact'>
     <Form className="form">
-      <h1>Contact Me</h1>
+      <h1 style={{textAlign:"center"}}>Contact Me</h1>
     <Form.Label>Email</Form.Label>
       <Form.Control
         value={email}

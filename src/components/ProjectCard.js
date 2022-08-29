@@ -6,12 +6,13 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import '../styles/ProjectCard.css';
+import { Divider } from '@mui/material';
 
 export default function ProjectCard(props) {
   if(props.deployed){
 
     return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card  sx={[{ maxWidth: 345, textAlign:"center"}]}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -26,15 +27,16 @@ export default function ProjectCard(props) {
           {props.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button  size="small"><a target='_blank' href={props.repo}>Github Repo</a></Button>
-        <Button size="small"><a target='_blank' href={props.deployed}>Deployed Link</a></Button>
+      <CardActions style={{justifyContent:"center"}}>
+        <a style={{color:"black", textDecoration:"underline"}} target='_blank' href={props.repo}>Github Repo</a>
+        <Divider orientation="vertical" flexItem />
+        <a style={{color:"black", textDecoration:"underline"}} target='_blank' href={props.deployed}>Deployed Link</a>
       </CardActions>
     </Card>
     )
   } else{
     return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, textAlign:"center" }}>
       <CardMedia
         component="img"
         alt="green iguana"
@@ -49,8 +51,8 @@ export default function ProjectCard(props) {
           {props.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button  size="small"><a target='_blank' href={props.repo}>Github Repo</a></Button>
+      <CardActions style={{justifyContent:"center"}}>
+        <a style={{color:"black", textDecoration:"underline", textAlign:"center"}} target='_blank' href={props.repo}>Github Repo</a>
       </CardActions>
     </Card>
     )
