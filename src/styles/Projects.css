@@ -2,9 +2,33 @@
 display: flex;
 justify-content: center;
 padding: 1rem;
-animation: bounce 1s;
 color: red;
 }
+
+.card1{
+    animation: bounce .6s;
+}
+.card2{
+    animation: bounce 1s;
+}
+
+.card3{
+    animation: bounce 1.2s;
+}
+
+.card4{
+    animation: bounce 1.4s;
+}
+
+.card5{
+    animation: bounce 1.6s;
+}
+
+.card6{
+    animation: bounce 1.8s;
+}
+
+
 
 .project-container{
     margin: auto;
