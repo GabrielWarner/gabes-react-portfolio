@@ -1,5 +1,38 @@
+
+@font-face {
+  font-family: 'bl_melodybold';
+  src: url('./styles/melody/blmelody-bold-webfont.woff2') format('woff2'),
+       url('./styles/melody/blmelody-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'bl_melodylight';
+  src: url('./styles/melody/blmelody-light-webfont.woff2') format('woff2'),
+       url('./styles/melody/blmelody-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'bl_melodymedium';
+  src: url('./styles/melody/blmelody-medium-webfont.woff2') format('woff2'),
+       url('./styles/melody/blmelody-medium-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+*{
+  background-color: transparent;
+}
 html {
   overflow-y: scroll;
+
 }
 body {
   margin: 0;
@@ -10,6 +43,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   overflow: auto;
+  background-color: transparent;
+  background: url('./images/background.svg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
 
 code {
@@ -21,8 +61,10 @@ code {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: grey;
+  background-color: transparent;
   
 }
+
+
 
 

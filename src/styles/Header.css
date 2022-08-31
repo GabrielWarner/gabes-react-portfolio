@@ -1,11 +1,63 @@
+
 @font-face {
-    font-family: 'yapari_variable_trialultra';
-    src: url('yapari-variable-trial-vf-webfont.woff2') format('woff2'),
-         url('yapari-variable-trial-vf-webfont.woff') format('woff');
+    font-family: 'bl_melodybold';
+    src: url('./melody/blmelody-bold-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'bl_melodylight';
+    src: url('./melody/blmelody-light-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'bl_melodymedium';
+    src: url('./melody/blmelody-medium-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  .name{
+    color:rgb(215, 198, 219);
+    font-family: 'bl_melodybold';
+    font-size: 3em;
+    
+  }
+
+
+.header-link{
+    font-size: 2em;
+    color: rgb(215, 198, 219);
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-family: 'bl_melodybold';
 
 }
+
+.header-link:hover{
+color: #c9bcd7;
+}
+
+.active-link{
+    color: rgb(215, 198, 219);
+    text-shadow:
+        0 0 7px rgb(218, 179, 227),
+        0 0 10px rgb(218, 179, 227),
+        0 0 21px rgb(218, 179, 227);
+}
+
 .skills {
     display: flex;
     word-wrap: wrap;
@@ -15,9 +67,6 @@
     justify-content: center;
     padding: 1rem;
 }
-.navbarFix {
-    
-}
 
 
 a{
@@ -25,10 +74,11 @@ a{
 }
 
 .header{
-    font-family: 'yapari_variable_trialultra';
+    font-family: 'bl_melodybold';
     
 }
 
 .navContainer {
     flex-direction: column;
 }
+

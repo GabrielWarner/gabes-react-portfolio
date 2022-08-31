@@ -3,21 +3,21 @@ import '../styles/Header.css';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+
 
 function Header({ currentPage, handlePageChange }) {
   return (
     <div>
-    <Navbar bg="light" expand="lg">
+    <Navbar className='my-3' expand="lg">
       <Container>
-        <Navbar.Brand className='header' href="#about">Gabriel Warner</Navbar.Brand>
+        <span className='name' href="#about">Gabriel Warner</span>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="m-auto links">
-          <Nav.Link href='#about' className={currentPage === 'About' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('About')}>About</Nav.Link>
-          <Nav.Link href="#projects" className={currentPage === 'Projects' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Projects')} >Projects</Nav.Link>
-          <Nav.Link href="#contact" className={currentPage === 'Contact' ? 'nav-link active p-5' : 'nav-link p-5'} onClick={() => handlePageChange('Contact')} >Contact</Nav.Link>
-          <Nav.Link href="#resume" className={currentPage === 'Resume' ? 'nav-link active p-5' : 'nav-link p-5' } onClick={() => handlePageChange('Resume')} >Resume</Nav.Link>
+          <a href='#about' className={currentPage === 'About' ? 'header-link active-link ' : 'header-link '} onClick={() => handlePageChange('About')}>About</a>
+          <a href="#projects" className={currentPage === 'Projects' ? 'header-link active-link ' : 'header-link '} onClick={() => handlePageChange('Projects')} >Projects</a>
+          <a href="#contact" className={currentPage === 'Contact' ? 'header-link active-link ' : 'header-link '} onClick={() => handlePageChange('Contact')} >Contact</a>
+          <a href="#resume" className={currentPage === 'Resume' ? 'header-link active-link ' : 'header-link ' } onClick={() => handlePageChange('Resume')} >Resume</a>
           </Nav>
         </Navbar.Collapse>
       </Container>

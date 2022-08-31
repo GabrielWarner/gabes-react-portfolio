@@ -1,33 +1,47 @@
 .about {
-    color: black;
+    color: white;
     display: flex;
-    justify-content: center;
+    width: 50%;
+    justify-content: flex-start;
     flex-direction: column;
-    align-items: flex-start;
-    margin-top: 10%;
-    margin-left: 25%
+    align-items: center;
+    margin: auto;
+    border-radius: 50px;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(5px);
+    padding: 1.5em;
 }
-.links {
-    justify-content: center;
+.face{
+    width: 25%;
+    height: auto;
+}
+.about-container{
+  
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
 }
-h1{
-    text-align: left;
+.about-title{
+    font-family: 'bl_melodymedium';
 }
-.avatar{
-    margin-right: 14rem;
+.about-text{
+    color: white;
+    font-family: 'bl_melodylight';
+    width: 100%;
 }
+
 
 hr {
     color: black;
 }
 
 .text-container{
-    width: 50%;
+    width: 100%;
     border: 5px solid black;
 }
 
 .about-text{
-    width: 50%;
+    width: 100%;
 }
 
