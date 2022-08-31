@@ -15,7 +15,7 @@ export default function About() {
         />
         <h1 className=' about-title animate__animated animate__fadeInRight'>Hi, Im Gabriel<br></br> A Software Engineer</h1>
         <p className='about-text animate__animated animate__fadeInLeft'>
-          Hello, My name is Gabriel Warner and I am a student at the University of Washinton Tacoma, Im a Senior whose about to graduate with a Bachelors of Science in Information Technology.
+          Im currently a student at the University of Washington Tacoma with one more year to graduate until I recieve my Bachelors of Science in Information Technology. I was born in Hawaii and have played video games professionaly when I was younger. I love to hike, build computers and go to the gym, Im currently down almost 90lbs from when I first started! Im a very competitive person at heart who loves to problem solve and be creative when building things.  
         </p>
       </div>
       
