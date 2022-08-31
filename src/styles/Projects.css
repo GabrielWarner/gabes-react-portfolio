@@ -1,0 +1,52 @@
+.aligncard1 {
+display: flex;
+justify-content: center;
+padding: 1rem;
+
+}
+
+
+
+.card1{
+    animation: bounce .6s;
+}
+.card2{
+    animation: bounce 1s;
+}
+
+.card3{
+    animation: bounce 1.2s;
+}
+
+.card4{
+    animation: bounce 1.4s;
+}
+
+.card5{
+    animation: bounce 1.6s;
+}
+
+.card6{
+    animation: bounce 1.8s;
+}
+
+
+
+.project-container{
+    margin: auto;
+    padding: auto;
+}
+
+
+
+@keyframes bounce {
+    0%{
+        transform: scale(90%);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(100%);
+        opacity: 1;
+    }
+    
+}

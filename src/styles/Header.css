@@ -1,0 +1,153 @@
+
+@font-face {
+    font-family: 'bl_melodybold';
+    src: url('./melody/blmelody-bold-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'bl_melodylight';
+    src: url('./melody/blmelody-light-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+  
+  
+  @font-face {
+    font-family: 'bl_melodymedium';
+    src: url('./melody/blmelody-medium-webfont.woff2') format('woff2'),
+         url('./melody/blmelody-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  
+  }
+
+  .name{
+    color:rgb(215, 198, 219);
+    font-family: 'bl_melodybold';
+    font-size: 3em;
+    
+  }
+
+
+.header-link{
+    font-size: 2em;
+    color: rgb(215, 198, 219);
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    font-family: 'bl_melodybold';
+
+}
+
+.header-link:hover{
+color: #c9bcd7;
+text-shadow:
+0 0 7px rgb(218, 179, 227),
+0 0 10px rgb(218, 179, 227),
+0 0 21px rgb(218, 179, 227);
+}
+
+.active-link{
+    color: rgb(215, 198, 219);
+    text-shadow:
+        0 0 7px rgb(218, 179, 227),
+        0 0 10px rgb(218, 179, 227),
+        0 0 21px rgb(218, 179, 227);
+}
+
+.skills {
+    display: flex;
+    word-wrap: wrap;
+}
+
+.navbar{
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+a{
+    color: white;
+}
+
+.header{
+    font-family: 'bl_melodybold';
+    
+}
+
+.navContainer {
+    flex-direction: column;
+}
+
+
+@media only screen 
+  and (max-width: 320px) {
+  /* Styles */
+    .name{
+font-size: 1em;
+    }
+}
+
+
+@media only screen 
+  and (max-width: 991px) {
+  /* Styles */
+    .name{
+font-size: 1.5em;
+    }
+}
+
+
+
+@media only screen 
+  and (max-width: 1200px) {
+  /* Styles */
+  .name{
+    font-size: 1.5em;
+        }
+
+  .header-link{
+font-size: 1.5em;
+  }
+
+}
+
+@media only screen 
+  and (max-device-width: 1500) 
+  and (orientation: portrait) {
+  /* Styles */
+  .name{
+    font-size: 1.5em;
+        }
+
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+  and (min-width: 1224px) {
+  /* Styles */
+  .name{
+    font-size: 3em;
+        }
+
+
+}
+
+@media only screen 
+  and (min-width: 1824px) {
+  /* Styles */
+  .name{
+    font-size: 3em;
+        }
+
+
+}
+
