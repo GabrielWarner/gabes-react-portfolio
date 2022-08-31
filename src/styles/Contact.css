@@ -1,13 +1,16 @@
 .contact {
-    width: 50%;
-    padding: auto;
-    margin: auto;
-    text-align: center;
+  color: white;
+  width: 50%;
+  margin: auto;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+  padding: 1.5em;
 }
 
 .button-19 {
   appearance: button;
-  background-color: #1899D6;
+  background-color: #a884ce;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
@@ -38,7 +41,7 @@
 
 .button-19:after {
   background-clip: padding-box;
-  background-color: #1CB0F6;
+  background-color: #c9bcd7;
   border: solid transparent;
   border-radius: 16px;
   border-width: 0 0 4px;
