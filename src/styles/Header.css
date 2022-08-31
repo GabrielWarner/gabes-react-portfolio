@@ -86,3 +86,65 @@ a{
     flex-direction: column;
 }
 
+
+@media only screen 
+  and (max-width: 320px) {
+  /* Styles */
+    .name{
+font-size: 1em;
+    }
+}
+
+
+@media only screen 
+  and (max-width: 991px) {
+  /* Styles */
+    .name{
+font-size: 1.5em;
+    }
+}
+
+
+
+@media only screen 
+  and (max-device-width: 1200px) {
+  /* Styles */
+  .name{
+    font-size: 2em;
+        }
+
+  .header-link{
+font-size: 1.5em;
+  }
+
+}
+
+@media only screen 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+  /* Styles */
+  .resume-container{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+  and (min-width: 1224px) {
+  /* Styles */
+  .resume-container{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media only screen 
+  and (min-width: 1824px) {
+  /* Styles */
+  .resume-container{
+    width: 90%;
+    margin: auto;
+  }
+}
+
