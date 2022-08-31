@@ -10,16 +10,13 @@ export default function Footer() {
   return (
 
       <div className='footer' maxidth="sm">
-        <Typography variant="body1">
-          Gabriel Warner
-        </Typography>
 
-        <a className='footer-link' target='_blank' href='https://github.com/GabrielWarner'>
-        <GoMarkGithub size="2em"/>
+        <a className='link' target='_blank' href='https://github.com/GabrielWarner'>
+        <GoMarkGithub className='link' size="2em"/>
         </a>
 
-        <a className='footer-link' target='_blank' href='https://www.linkedin.com/in/gabriel-warner-083ab4211/'>
-        <AiFillLinkedin size="2em"/>
+        <a className='link' target='_blank' href='https://www.linkedin.com/in/gabriel-warner-083ab4211/'>
+        <AiFillLinkedin className='link' size="2em"/>
         </a>
       </div>
     

@@ -5,6 +5,10 @@ padding: 1rem;
 color: red;
 }
 
+.center{
+    background-color: red;
+}
+
 .card1{
     animation: bounce .6s;
 }

@@ -48,6 +48,10 @@
 
 .header-link:hover{
 color: #c9bcd7;
+text-shadow:
+0 0 7px rgb(218, 179, 227),
+0 0 10px rgb(218, 179, 227),
+0 0 21px rgb(218, 179, 227);
 }
 
 .active-link{

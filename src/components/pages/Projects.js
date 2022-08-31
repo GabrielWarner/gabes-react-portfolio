@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <div className='project-container' >
 <div className='container'>
-      <h1 className='animate__animated animate__bounce' style={{textAlign:"center"}}>My Projects</h1>
+      <h1 className='animate__animated animate__bounce' style={{textAlign:"center", color:"#c9bcd7", }}>My Projects</h1>
 <div class="row">
     <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1 card1">
         <ProjectCard
@@ -42,6 +42,7 @@ export default function Projects() {
         name='Social Network API' 
         description='An API created to mock a social media website with Users,thoughts, and reactions. Created with Mongo DB.'
         repo='https://github.com/GabrielWarner/social-network-api'
+        demo='https://drive.google.com/file/d/1tQVY3zqgmJL2pb9m3EROx2qsooWJNpeh/view'
         ></ProjectCard>
     </div>
     <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1 card5">
@@ -51,6 +52,7 @@ export default function Projects() {
         name='Eccomerce Backend API' 
         description='An API to keep track of inventory for a merchandise store.'
         repo='https://github.com/GabrielWarner/ecommerce-backend-api'
+        demo='https://drive.google.com/file/d/14ThZQkGF5Da-hoMgl946D3ziagbsYyCu/view'
         ></ProjectCard>
     </div>
     <div class="col-xs-12 col-sm-12 col-lg-6 col-xl-4 center-block aligncard1 card6">
@@ -60,6 +62,7 @@ export default function Projects() {
         name='Employee Tracker' 
         description='An API to manage a company and its employees.'
         repo='https://github.com/GabrielWarner/employee-tracker'
+        demo='https://drive.google.com/file/d/1esGPSqDSxSufjQPQlZZViPCHYK-Nu6zB/view'
         ></ProjectCard>
     </div>
 </div>

@@ -12,47 +12,50 @@ export default function ProjectCard(props) {
   if(props.deployed){
 
     return (
-      <Card  sx={[{ maxWidth: 345, textAlign:"center"}]}>
+      <Card style={{backgroundColor: 'rgba(255, 255, 255, .15)', backdropFilter: "blur(5px)", borderRadius:"50px" }}  sx={[{ maxWidth: 345, textAlign:"left",}]}>
       <CardMedia
         component="img"
         alt="green iguana"
-        height="140"
+        height="200"
         image={props.img}
+        style={{ borderTopLeftRadius:"50px"}}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography style={{color:"white"}} gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography style={{color:"white"}} variant="body2" color="text.secondary">
           {props.description}
         </Typography>
       </CardContent>
       <CardActions style={{justifyContent:"center"}}>
-        <a style={{color:"black", textDecoration:"underline"}} target='_blank' href={props.repo}>Github Repo</a>
+        <a style={{color:"white", textDecoration:"underline"}} target='_blank' href={props.repo}>Github Repo</a>
         <Divider orientation="vertical" flexItem />
-        <a style={{color:"black", textDecoration:"underline"}} target='_blank' href={props.deployed}>Deployed Link</a>
+        <a style={{color:"white", textDecoration:"underline"}} target='_blank' href={props.deployed}>Deployed Link</a>
       </CardActions>
     </Card>
     )
   } else{
     return (
-      <Card sx={{ maxWidth: 345, textAlign:"center" }}>
+      <Card style={{backgroundColor: 'rgba(255, 255, 255, .15)', backdropFilter: "blur(5px)",borderRadius:'50px' }} sx={{ maxWidth: 345, textAlign:"left" }}>
       <CardMedia
+      style={{ borderTopLeftRadius:"50px"}}
         component="img"
         alt="green iguana"
-        height="140"
+        height="200"
         image={props.img}
       />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography style={{color:"white"}} gutterBottom variant="h5" component="div">
           {props.name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography style={{color:"white"}} variant="body2" color="text.secondary">
           {props.description}
         </Typography>
       </CardContent>
       <CardActions style={{justifyContent:"center"}}>
-        <a style={{color:"black", textDecoration:"underline", textAlign:"center"}} target='_blank' href={props.repo}>Github Repo</a>
+        <a style={{color:"white", textDecoration:"underline", textAlign:"center"}} target='_blank' href={props.repo}>Github Repo</a>
+        <a style={{color:"white", textDecoration:"underline", textAlign:"center"}} target='_blank' href={props.demo}>Live Demo</a>
       </CardActions>
     </Card>
     )

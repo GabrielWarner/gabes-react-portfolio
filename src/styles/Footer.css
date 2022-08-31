@@ -7,7 +7,10 @@
     gap: 2em;
 
 }
-.footer-link{
-    color: black;
-    background-color: transparent;
+.link{
+    color: #c9bcd7;
+}
+
+.link:hover {
+    color: #9f6ed3;
 }
