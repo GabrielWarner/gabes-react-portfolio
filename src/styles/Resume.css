@@ -13,8 +13,12 @@
 
 
 .resume-link {
-color: black;
+color: white;
 text-decoration: underline;
+}
+
+.resume-link:hover{
+    color:#c9bcd7;
 }
 
 

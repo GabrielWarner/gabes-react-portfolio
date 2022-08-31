@@ -48,7 +48,7 @@ export default function Contact() {
   };
   return (
     <div className='contact'>
-    <Form className="form avatar animate__animated animate__bounce">
+    <form className="form avatar animate__animated animate__bounce">
       <h1 style={{textAlign:"center"}}>Contact Me</h1>
     <Form.Label>Email</Form.Label>
       <Form.Control
@@ -95,7 +95,7 @@ export default function Contact() {
       </div>
     )}
       <button className='button-19' type="button" onClick={handleFormSubmit}>Submit</button>
-    </Form>
+    </form>
   </div>
   )
 }

@@ -67,3 +67,43 @@
 .button-19:disabled {
   cursor: auto;
 }
+
+@media only screen 
+  and (max-width: 320px) {
+  /* Styles */
+    .contact{
+      width: 90%;
+      margin: auto;
+    }
+}
+
+@media only screen 
+  and (max-device-width: 1768px) 
+  and (orientation: portrait) {
+  /* Styles */
+  .contact{
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media only screen 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) {
+  /* Styles */
+  .contact{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen 
+  and (min-width: 1224px) {
+  /* Styles */
+}
+
+@media only screen 
+  and (min-width: 1824px) {
+  /* Styles */
+}
