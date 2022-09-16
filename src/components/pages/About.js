@@ -1,6 +1,5 @@
 import React from 'react'
-import { Divider } from '@mui/material';
-import { Typography, Avatar } from '@mui/material';
+import { Avatar } from '@mui/material';
 
 import '../../styles/About.css';
 
@@ -13,9 +12,13 @@ export default function About() {
         src="/images/myface.png"
         sx={{ width: 200, height: 200 }}
         />
-        <h1 className=' about-title animate__animated animate__fadeInRight'>Hi, Im Gabriel<br></br> A Software Engineer</h1>
+        <h1 className=' about-title animate__animated animate__fadeInRight'>Hi, Im Gabriel<br></br> A Web Developer</h1>
         <p className='about-text animate__animated animate__fadeInLeft'>
-          Im currently a student at the University of Washington Tacoma with one more year to graduate until I recieve my Bachelors of Science in Information Technology. I was born in Hawaii and have played video games professionaly when I was younger. I love to hike, build computers and go to the gym, Im currently down almost 90lbs from when I first started! Im a very competitive person at heart who loves to problem solve and be creative when building things.  
+        Currently attending the University of Washington Tacoma working towards my Bachelor of Science in Information Technology, graduating in May of 2023.
+
+Currently looking for an internship as a software developer.
+
+Recently Graduated from the University of Washington Full Stack Web Developer Bootcamp where I became proficient in Javascript, HTML, CSS, React, Boostrap, Node.js, Express, MySQL, MongoDB, and Handlebars. A proven team player who is creative and an effective communicator.  
         </p>
       </div>
       

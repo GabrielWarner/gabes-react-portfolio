@@ -1,7 +1,5 @@
 
 import * as React from 'react';
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
 import '../styles/Footer.css';
 import { GoMarkGithub } from "react-icons/go";
 import { AiFillLinkedin } from "react-icons/ai";

@@ -3,7 +3,6 @@ import '../../styles/Contact.css';
 import { useState } from 'react';
 import {  validateEmail } from '../../utils/helpers';
 import Form from 'react-bootstrap/Form';
-import Button from '@mui/material/Button';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
